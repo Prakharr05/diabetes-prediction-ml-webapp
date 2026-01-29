@@ -1,0 +1,9 @@
+from joblib import load
+
+# Load the model
+model = load("diabetes_detection_model.pkl")
+
+# Make a prediction
+sample_input = [[5.1, 3.5, 1.4, 0.2]]
+prediction = model.predict(sample_input)
+print("Prediction:", prediction)
